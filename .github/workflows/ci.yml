@@ -24,7 +24,7 @@ jobs:
       # -----------------------------
       - name: Build and push Docker image to Docker Hub
         env:
-          DOCKER_REPO: nikhilmali/myflaskapp
+          DOCKER_REPO: nikhilm2003/myflaskapp
         run: |
           docker build -t $DOCKER_REPO:latest .
           docker push $DOCKER_REPO:latest
